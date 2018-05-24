@@ -34,7 +34,7 @@ export default class Header extends React.Component {
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
               <NavItem>
-                <NavLink><img className="profilePic" src={this.props.profilePic}/></NavLink>
+                <NavLink><img alt="" className="profilePic" src={this.props.profilePic}/></NavLink>
               </NavItem>
               <NavItem>
                 <NavLink href="#" onClick={this.props.authlink}>{this.props.link2}</NavLink>

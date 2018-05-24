@@ -3,6 +3,7 @@ import './App.css';
 import Header from './components/Header';
 import { rebase }  from './config/constants';
 import {loginWithGoogle, logout} from './helpers/auth';
+import MainContainer from './components/MainContainer';
 
 class App extends Component {
   state = {
@@ -53,7 +54,7 @@ class App extends Component {
             profilePic={this.state.photo}
             link2="Log Out"
           />
-          <h2>You're Logged In!</h2>
+          <MainContainer />
         </div>
       )
   }
